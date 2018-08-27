@@ -1,0 +1,4 @@
+So right now I need to figure out why the webhooks are timing out. I tried making a POST request to http://155.177.99.157:8080/github-webhook/ using 
+apirequest.io and initially got an error. Then I isntalled a chrome addon to allow CORS stuff and the request went through (still returning an error
+"Error: Hook should contain event type", but that makes sense since I sent an empty request). I added the CORS support for Jenkins pluggin hoping that
+this would help but no luck. I'll probably have to ask Ragu or Dan how to get around this.
